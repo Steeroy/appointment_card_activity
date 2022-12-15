@@ -1,0 +1,398 @@
+/* Fonts from google fonts, the selected font is Poppins, font weights (light, regular, medium, semi bold and bold) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h4,
+h5,
+h6,
+span {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* These styles are for the whole card */
+
+main {
+  width: 36%;
+  height: 38%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  gap: 24px;
+  position: absolute;
+  background: #fafafa;
+}
+
+.content__wrapper h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.content__wrapper .patient {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content__wrapper .patient .patient__info_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__wrapper .patient .patient__info_row .patient__name_img {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.patient__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.patient__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__wrapper
+  .patient
+  .patient__info_row
+  .patient__name_img
+  .patient__name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.content__wrapper
+  .patient
+  .patient__info_row
+  .patient__name_img
+  .patient__name
+  h6 {
+  font-size: 14px;
+  color: #1515da;
+  font-weight: 600;
+}
+
+.content__wrapper
+  .patient
+  .patient__info_row
+  .patient__name_img
+  .patient__name
+  h5 {
+  font-size: 16px;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+
+.content__wrapper .patient .patient__info_row i {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(221, 221, 221, 0.6);
+  transform: rotateY(180deg);
+  font-size: 16px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content__wrapper .patient .patient__info_row i:hover {
+  background: rgba(94, 93, 93);
+}
+
+.content__wrapper .patient .patient__info_row i::before {
+  font-size: 16px;
+  color: #2e2e2e;
+  transition: 0.5s;
+}
+
+.content__wrapper .patient .patient__info_row i:hover::before {
+  color: #dfdfdf;
+}
+
+.content__wrapper .patient hr {
+  border: none;
+  border-top: 2px dotted #1818d191;
+  color: transparent;
+  background-color: transparent;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+}
+
+.content__wrapper .patient .clock__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__wrapper .patient .clock__row .clock {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.content__wrapper .patient .clock__row .clock i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__wrapper .patient .clock__row .clock i::before {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.content__wrapper .patient .clock__row .clock span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+.content__wrapper .patient .clock__row i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content__wrapper .patient .clock__row i:hover {
+  background: #dfdfdf;
+}
+
+.content__wrapper .patient .clock__row i::before {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dropdown__menu ul {
+  position: absolute;
+  transform: translate(-44px, -24px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px 8px;
+  background: #dfdfdf;
+  border-radius: 12px;
+  box-shadow: 0px 0.5em 1em rgba(58, 57, 57, 0.2);
+  display: none;
+}
+
+.dropdown__menu ul li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e2e2e;
+  transition: 0.5s;
+  padding: 2px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown__menu ul li:hover {
+  background: #818181;
+}
+
+.sliders {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  transform: translate(202px, -220px);
+}
+
+.sliders i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.sliders i:hover {
+  background: #dfdfdf;
+}
+
+.sliders i::before {
+  font-size: 14px;
+  color: rgba(46, 46, 46, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sliders i:hover::before {
+  color: rgba(46, 46, 46, 1);
+}
+
+/*  These styles are for the whole card wrapper 
+
+/* These are the styles for responsive designs */
+@media screen and (max-width: 1024px) {
+  main {
+    width: 46%;
+    height: 44%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 62%;
+    height: 44%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    width: 90%;
+    height: 38%;
+  }
+
+  .content__wrapper h4 {
+    font-size: 14px;
+  }
+
+  .content__wrapper .patient {
+    gap: 16px;
+  }
+
+  .content__wrapper .patient .patient__info_row .patient__name_img {
+    gap: 14px;
+  }
+
+  .patient__img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .content__wrapper
+    .patient
+    .patient__info_row
+    .patient__name_img
+    .patient__name
+    h6 {
+    font-size: 12px;
+  }
+
+  .content__wrapper
+    .patient
+    .patient__info_row
+    .patient__name_img
+    .patient__name
+    h5 {
+    font-size: 14px;
+  }
+
+  .content__wrapper .patient .patient__info_row i {
+    width: 26px;
+    height: 26px;
+  }
+
+  .content__wrapper .patient .patient__info_row i::before {
+    font-size: 10px;
+  }
+
+  .content__wrapper .patient .clock__row i {
+    width: 26px;
+    height: 26px;
+  }
+
+  .content__wrapper .patient .clock__row i::before {
+    font-size: 10px;
+  }
+
+  .content__wrapper .patient .clock__row i {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .content__wrapper .patient .clock__row i::before {
+    font-size: 14px !important;
+  }
+
+  .content__wrapper .patient .clock__row .clock span {
+    font-size: 12px;
+  }
+
+  .dropdown__menu ul li {
+    font-size: 12px;
+  }
+
+  .sliders {
+    transform: translate(140px, -198px);
+  }
+  .sliders i {
+    width: 26px;
+    height: 26px;
+  }
+
+  .sliders i::before {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sliders {
+    transform: translate(118px, -198px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sliders {
+    transform: translate(96px, -192px);
+  }
+}

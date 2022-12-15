@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+    
+  <body>
+
+    <!-- This is the patient card -->
+    <main>
+      <div class="content__wrapper">
+      <h4>Next patient</h4>
+      <div class="patient">
+
+        <!-- This is the patient row with image and contact -->
+        <div class="patient__info_row">
+          <div class="patient__name_img">
+            <div class="patient__img">
+              <img src="./pexels-frank-k-1820656.jpg" alt="Patient">
+            </div>
+
+            <div class="patient__name">
+              <h6>Polly Paul</h6>
+              <h5>USG + Consultation</h5>
+            </div>
+          </div>
+
+          <a href="tel:+27791234567">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+        </div>
+
+        <hr>
+
+        <div class="clock__row">
+          <div class="clock">
+            <i class="fa fa-clock" aria-hidden="true"></i>
+            <span>9:30</span>
+          </div>
+
+          <div class="dropdown__menu">
+            <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="menuOpen()"></i>
+  
+            <ul id="menus">
+              <li>Menu1</li>
+              <li>Menu2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="content__wrapper">
+      <h4>Next patient</h4>
+      <div class="patient">
+
+        <!-- This is the patient row with image and contact -->
+        <div class="patient__info_row">
+          <div class="patient__name_img">
+            <div class="patient__img">
+              <img src="./pexels-dellon-thomas-3394347.jpg" alt="Patient">
+            </div>
+
+            <div class="patient__name">
+              <h6>Thomas Paul</h6>
+              <h5>USG + Consultation</h5>
+            </div>
+          </div>
+
+          <a href="tel:+27791234567">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <hr>
+
+        <div class="clock__row">
+          <div class="clock">
+            <i class="fa fa-clock" aria-hidden="true"></i>
+            <span>9:30</span>
+          </div>
+
+          <div class="dropdown__menu">
+            <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="menuOpen()"></i>
+  
+            <ul>
+              <li>Menu1</li>
+              <li>Menu2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="content__wrapper">
+      <h4>Next patient</h4>
+      <div class="patient">
+
+        <!-- This is the patient row with image and contact -->
+        <div class="patient__info_row">
+          <div class="patient__name_img">
+            <div class="patient__img">
+              <img src="./pexels-frágil-y-fugaz-14604103.jpg" alt="Patient">
+            </div>
+
+            <div class="patient__name">
+              <h6>Jack Paul</h6>
+              <h5>USG + Consultation</h5>
+            </div>
+          </div>
+
+          
+          <a href="tel:+27791234567">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+        
+        </div>
+
+        <hr>
+
+        <div class="clock__row">
+          <div class="clock">
+            <i class="fa fa-clock" aria-hidden="true"></i>
+            <span>9:30</span>
+          </div>
+
+          <div class="dropdown__menu">
+            <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="menuOpen()"></i>
+
+          <ul>
+            <li>Menu1</li>
+            <li>Menu2</li>
+          </ul>
+        </div>
+         
+
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <div class="sliders">
+      <i class="fa fa-chevron-left" aria-hidden="true" onclick="previousPatient()"></i>
+      <i class="fa fa-chevron-right" aria-hidden="true" onclick="nextPatient()"></i>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
