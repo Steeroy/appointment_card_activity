@@ -27,6 +27,7 @@ var show;
 const menuOpen = () => {
   if (show == 1) {
     document.getElementById('menus').style.display = 'block';
+
     return (show = 0);
   } else {
     document.getElementById('menus').style.display = 'none';
