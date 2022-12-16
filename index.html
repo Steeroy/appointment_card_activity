@@ -7,17 +7,32 @@
 
     <link rel="stylesheet" href="./index.css" />
 
+    <!-- Couldn't use flaticon due to not having a premium subscription, my apologies, used font-awesome as a substitute -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
     
   <body>
 
     <!-- This is the patient card -->
+
+    <!-- The main section has the patient cards on top of each other -->
     <main>
+
+      <!-- The content wrapper has all the content of a patient -->
       <div class="content__wrapper">
+
+        <!-- This has the slider icons which are clickable and change the slides -->
+        <div class="slider__section">
       <h4>Next patient</h4>
+      <div class="sliders">
+        <i class="fa fa-chevron-left" aria-hidden="true" onclick="previousPatient()"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" onclick="nextPatient()"></i>
+      </div>
+    </div>
+
+    
       <div class="patient">
 
-        <!-- This is the patient row with image and contact -->
+        <!-- This is the patient row with image and contact info, the phone icon is clickable -->
         <div class="patient__info_row">
           <div class="patient__name_img">
             <div class="patient__img">
@@ -37,6 +52,7 @@
 
         <hr>
 
+        <!-- This row has the appointment time and the navigation menu with menu1 and menu2, the elipses is clickable -->
         <div class="clock__row">
           <div class="clock">
             <i class="fa fa-clock" aria-hidden="true"></i>
@@ -56,7 +72,13 @@
     </div>
 
       <div class="content__wrapper">
+        <div class="slider__section">
       <h4>Next patient</h4>
+      <div class="sliders">
+        <i class="fa fa-chevron-left" aria-hidden="true" onclick="previousPatient()"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" onclick="nextPatient()"></i>
+      </div>
+      </div>
       <div class="patient">
 
         <!-- This is the patient row with image and contact -->
@@ -98,7 +120,13 @@
     </div>
 
       <div class="content__wrapper">
+        <div class="slider__section">
       <h4>Next patient</h4>
+      <div class="sliders">
+        <i class="fa fa-chevron-left" aria-hidden="true" onclick="previousPatient()"></i>
+        <i class="fa fa-chevron-right" aria-hidden="true" onclick="nextPatient()"></i>
+      </div>
+      </div>
       <div class="patient">
 
         <!-- This is the patient row with image and contact -->
@@ -143,11 +171,6 @@
       </div>
     </div>
     </main>
-
-    <div class="sliders">
-      <i class="fa fa-chevron-left" aria-hidden="true" onclick="previousPatient()"></i>
-      <i class="fa fa-chevron-right" aria-hidden="true" onclick="nextPatient()"></i>
-    </div>
 
     <script src="./index.js"></script>
   </body>

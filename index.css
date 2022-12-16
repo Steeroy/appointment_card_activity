@@ -14,6 +14,7 @@ body {
   width: 100%;
   height: 100vh;
   flex-direction: column;
+  margin: 0px;
 }
 
 h4,
@@ -36,7 +37,7 @@ li {
 
 main {
   width: 36%;
-  height: 38%;
+  height: 40%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 12px;
   position: relative;
@@ -52,6 +53,12 @@ main {
   gap: 24px;
   position: absolute;
   background: #fafafa;
+}
+
+.slider__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .content__wrapper h4 {
@@ -251,7 +258,6 @@ main {
   display: flex;
   gap: 18px;
   align-items: center;
-  transform: translate(202px, -220px);
 }
 
 .sliders i {
@@ -285,21 +291,21 @@ main {
 @media screen and (max-width: 1024px) {
   main {
     width: 46%;
-    height: 44%;
+    height: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
   main {
     width: 62%;
-    height: 44%;
+    height: 40%;
   }
 }
 
 @media screen and (max-width: 425px) {
   main {
     width: 90%;
-    height: 38%;
+    height: 36%;
   }
 
   .content__wrapper h4 {
@@ -372,9 +378,6 @@ main {
     font-size: 12px;
   }
 
-  .sliders {
-    transform: translate(140px, -198px);
-  }
   .sliders i {
     width: 26px;
     height: 26px;
@@ -386,13 +389,7 @@ main {
 }
 
 @media screen and (max-width: 375px) {
-  .sliders {
-    transform: translate(118px, -198px);
-  }
 }
 
 @media screen and (max-width: 375px) {
-  .sliders {
-    transform: translate(96px, -192px);
-  }
 }
